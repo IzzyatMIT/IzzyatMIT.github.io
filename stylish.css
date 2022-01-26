@@ -1,0 +1,140 @@
+body {
+  font-family: 'Press Start 2P';
+  color: #0abb51;
+  background-color: black;
+}
+
+.videoPositioning {
+  position: aboslute;
+  height: 100vh;
+}
+
+.youtubeVideo {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  /* padding for 16:9 video, 16/9 = 0.5625 */
+  height: 0;
+}
+.youtubeVideo iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/*
+.textTest {
+  font-family: 'Press Start 2P';
+}
+*/
+.navbar-sticks {
+  position: sticky;
+  top: 0;
+  z-index: 4;
+}
+
+.navbar-section {
+  height: vh;
+}
+
+.video-section {
+  border: 0px;
+}
+
+.grid-container {
+  max-width: 1316px;
+  margin: 0 auto;
+  display: grid;
+  padding-top: 300px;
+  padding-bottom: 20%;
+  grid-template-columns: auto auto auto;
+}
+
+.grid-item {
+  border: 3px solid black;
+  padding: auto;
+  text-align: center;
+}
+
+.card {
+  margin: 0 auto;
+}
+
+.profile-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr auto auto;
+  max-height: 1080px;
+  max-width: 100%;
+}
+
+.image-content {
+  z-index: 1;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 7;
+  background-image: url('assets/profile.jpg');
+  background-position: 80%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.profile-image {
+  width: 100vw;
+}
+
+.bio-content {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  z-index: 2;
+}
+
+.link-title {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 6;
+  grid-row-end: 7;
+  justify-self: center;
+  z-index: 5;
+  padding-top: 5px;
+}
+
+.logo-items {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 7;
+  grid-row-end: 8;
+
+  padding-top: 8px;
+  display: grid;
+  padding-bottom: 7%;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.logo {
+  width: 8vw;
+  max-width: 100px;
+}
+
+.rejected {
+  font-size: 50px;
+  text-align: center;
+  padding-top: 45vh;
+}
+
+a {
+  color: #0abb51;
+  text-decoration: none;
+}
+
+.card-body {
+  background-color: rgb(27, 27, 27);
+}
+
+.card-title {
+  text-decoration: underline;
+}
